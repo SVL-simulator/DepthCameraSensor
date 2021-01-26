@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2783041447292560518}
   - component: {fileID: 2783041447292560517}
-  - component: {fileID: 2783041447292560516}
   - component: {fileID: 2783041447292560515}
+  - component: {fileID: 3521301338535828950}
   m_Layer: 0
   m_Name: DepthCameraSensor
   m_TagString: Untagged
@@ -76,37 +76,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!114 &2783041447292560516
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2783041447292560514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f3ad86b8e073614992b1612ed2c4016, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Name: 
-  Topic: 
-  Frame: 
-  Width: 1920
-  Height: 1080
-  Frequency: 5
-  JpegQuality: 100
-  FieldOfView: 60
-  MinDistance: 0.1
-  MaxDistance: 1000
-  Distorted: 0
-  DistortionParameters:
-  - 0
-  - 0
-  - 0
-  - 0
-  Fisheye: 0
-  Xi: 0
-  CubemapSize: 1024
 --- !u!114 &2783041447292560515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,3 +180,35 @@ MonoBehaviour:
       data1: 0
       data2: 0
   defaultFrameSettings: 0
+--- !u!114 &3521301338535828950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2783041447292560514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f3ad86b8e073614992b1612ed2c4016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: 
+  Topic: 
+  Frame: 
+  ParentTransform: {fileID: 0}
+  Width: 1920
+  Height: 1080
+  Frequency: 15
+  JpegQuality: 75
+  FieldOfView: 60
+  MinDistance: 0.1
+  MaxDistance: 2000
+  Distorted: 0
+  DistortionParameters: []
+  Fisheye: 0
+  Xi: 0
+  CubemapSize: 1024
+  TargetFPS: 0
+  TargetFPSTime: 5
+  AveFPS: 0
+  LowestFPS: 3.4028235e+38
