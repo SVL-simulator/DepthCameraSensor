@@ -1,7 +1,7 @@
 {
   "name": "Depth Camera Sensor",
   "accessType": "public",
-  "description": "This sensor returns an image where the shades on the grey-scale correspond to the depth of objects.\nSee {{DOCS_HOST}}/docs/python-api/#depth-camera for more details.",
+  "description": "This sensor returns an image where the shades on the grey-scale correspond to the depth of objects.\nSee {{DOCS_HOST}}/docs/simulation-content/sensors-list/#depth-camera for more details.",
   "licenseName": "LG Content",
   "copyright": "LG Electronics Inc.",
   "tags": [
