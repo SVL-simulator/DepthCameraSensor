@@ -19,9 +19,9 @@ namespace Simulator.Sensors
     {
         private ShaderTagId passId;
         
-        public override void Start()
+        protected override void Initialize()
         {
-            base.Start();
+            base.Initialize();
             passId = new ShaderTagId("SimulatorDepthPass");
             CameraTargetTextureReadWriteType = RenderTextureReadWrite.Linear;
             SensorCamera.GetComponent<HDAdditionalCameraData>().customRender += CustomRender;
